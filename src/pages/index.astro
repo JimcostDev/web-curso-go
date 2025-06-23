@@ -1,0 +1,17 @@
+---
+// src/pages/index.astro
+import Layout from '@layouts/Layout.astro';
+import SectionContainer from '@components/Container.astro';
+import Main from '@components/Main.astro';
+import Videos from '@components/Videos.astro';
+---
+
+<Layout title="Curso Programación en Go" description="Listado de clases del curso de Go de JimcostDev">
+  <SectionContainer id="principal">
+    <Main />
+  </SectionContainer>
+
+  <SectionContainer id="videos">
+    <Videos />
+  </SectionContainer>
+</Layout>

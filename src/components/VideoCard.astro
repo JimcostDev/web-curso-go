@@ -1,0 +1,41 @@
+---
+import type { Video } from '../types/videos';
+const video: Video = Astro.props.video;
+import LinkButton from './LinkButton.astro';
+import YouTubeIcon from './icons/YouTube.astro';
+import GitHubIcon from './icons/GitHub.astro';
+---
+
+<div class="bg-sky-50 rounded-2xl shadow p-4 flex flex-col h-full hover:scale-95 transition-transform duration-600">
+  <!-- Miniatura -->
+  <a
+    href={`https://www.youtube.com/watch?v=${video.youtubeId}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="block mb-4"
+  >
+    <img
+      src={`https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`}
+      alt={video.title}
+      class="rounded-lg w-full"
+    />
+  </a>
+
+  <!-- Título -->
+  <h3 class="text-lg font-semibold mb-4">{video.title}</h3>
+
+  <!-- Descripción -->
+  <p class="text-gray-600 mb-4 flex-0">
+    {video.description}
+  </p>
+
+  <!-- Botones uno al lado del otro -->
+  <div class="mt-auto flex flex-row gap-2">
+    <LinkButton href={`https://www.youtube.com/watch?v=${video.youtubeId}`}>
+      <YouTubeIcon class="size-4 md:size-5" /> Video
+    </LinkButton>
+    <LinkButton href={`https://github.com/JimcostDev/curso-go/${video.repoPath}`}>
+      <GitHubIcon class="size-4 md:size-5" /> Código
+    </LinkButton>
+  </div>
+</div>

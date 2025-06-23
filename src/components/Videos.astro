@@ -1,0 +1,10 @@
+---
+// src/components/Videos.astro
+import VideoCard from './VideoCard.astro';
+import { videos } from '../types/videos';
+---
+<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  {videos.map((video) => (
+    <VideoCard video={video} />
+  ))}
+</div>

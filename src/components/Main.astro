@@ -1,0 +1,48 @@
+---
+// src/components/Main.astro
+import LinkButton from './LinkButton.astro';
+import YouTubeIcon from './icons/YouTube.astro';
+import GitHubIcon from './icons/GitHub.astro';
+import GoIcon from './icons/Go.astro';
+---
+
+<section class="pt-9 md:pt-18 px-4 mt-6 relative max-w-screen-lg mx-auto">
+  <div class="flex flex-col items-center">
+    <!-- Título del curso -->
+    <h1 class="text-2xl md:text-4xl font-bold text-center px-4">
+      Curso de <span
+        class="bg-gradient-to-r from-sky-400 to-sky-600 bg-clip-text text-transparent"
+      >Programación en Go</span>
+    </h1>
+
+    <!-- Descripción breve -->
+    <p class="mt-4 text-center text-lg text-gray-700 max-w-prose">
+      Aprende Go desde cero con ejemplos prácticos en cada clase. Sigue paso a paso y domina el lenguaje.
+    </p>
+
+    <!-- Lista de beneficios -->
+    <ul class="mt-4 text-left text-gray-700 space-y-2 max-w-prose">
+      <li>✔️ Fundamentos de Golang</li>
+      <li>✔️ Algoritmos y lógica de programación</li>
+      <li>✔️ Proyectos prácticos y ejercicios</li>
+    </ul>
+
+    <!-- Frase de cierre -->
+    <p class="mt-4 text-center text-lg italic text-gray-600 max-w-prose">
+      🚀 Sumérgete en el mundo de Go y domina uno de los lenguajes más potentes y eficientes de la actualidad.
+    </p>
+
+    <!-- Botones de acción -->
+    <div class="flex flex-wrap gap-4 mt-6">
+      <LinkButton href="https://www.youtube.com/playlist?list=PLlWTGK7QJnmDtruzihqTgdi4FcM2enA1X">
+        <YouTubeIcon class="size-4 md:size-5" /> Lista de reproducción
+      </LinkButton>
+      <LinkButton href="https://github.com/JimcostDev/curso-go">
+        <GitHubIcon class="size-4 md:size-5" /> Repositorio
+      </LinkButton>
+      <LinkButton href="https://go.dev/play/">
+        <GoIcon class="size-6 md:size-7" /> Playground
+      </LinkButton>
+    </div>
+  </div>
+</section>
