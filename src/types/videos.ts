@@ -61,5 +61,42 @@ export const videos: Video[] = [
     repoPath: 'tree/master/exercises/challenge01.go',
     description: '¡Es hora de poner en práctica lo aprendido! En este primer reto de programación en Go, crearemos un registro de usuario donde el programa capturará y mostrará los datos de forma organizada.'
   },
+  {
+    title: '🏆 Reto #2 en Go: Promedios con Generics y Tipos Personalizados 🚀',
+    youtubeId: 'URdqtCTfYd4',
+    repoPath: 'tree/master/exercises/challenge02.go',
+    description: 'En este segundo reto práctico, combinamos dos conceptos fundamentales de Go: tipos personalizados (type) y funciones genéricas (generics). Vamos a construir una función que calcule promedios y utilizar un tipo personalizado para representar calificaciones. ¡Ideal para reforzar lo aprendido!'
+  },
+  {
+    title: '🔀 Condicionales en Go: Estructuras de Control (Selección) 🚀',
+    youtubeId: '--sp1XBXSHI',
+    repoPath: 'tree/master/flow_control/selection.go',
+    description: 'En este video, exploraremos las estructuras de control en Go enfocadas en las condicionales y la selección. Aprenderás a utilizar bloques condicionales con if-else.'
+  },
+  {
+    title: '🎯 Switch en Go: Control de Flujo con Casos Múltiples 🚦',
+    youtubeId: 'Teku56BqTJ4',
+    repoPath: 'tree/master/flow_control/selection.go',
+    description: 'En este video aprenderás a dominar el uso de la estructura switch en Go. Es una forma limpia y poderosa de manejar múltiples condiciones sin escribir muchos if-else. Veremos ejemplos prácticos como identificar el día de la semana o detectar vocales.'
+  },
+  {
+    title: '📌 Calcula tu IMC y Peso Ideal con Go! 🚀',
+    youtubeId: 'gafYwDD0lfI',
+    repoPath: 'tree/master/exercises/imc.go',
+    description: 'En este video, aprenderás a programar un algoritmo para calcular el Índice de Masa Corporal (IMC) y determinar tu peso ideal según la OMS.'
+  },
+  {
+    title: '🔁 Bucles en Go: for, while, range, break y continue 🚀',
+    youtubeId: 'vhtuveKqwdY',
+    repoPath: 'tree/master/flow_control/iterators.go',
+    description: 'En este video aprenderás a utilizar los diferentes tipos de bucles en Go para controlar el flujo de tus programas. Veremos el uso de for tradicional, for tipo while, range, y las instrucciones break y continue. Todo con ejemplos prácticos que te ayudarán a dominar las iteraciones en Go.'
+  },
+  {
+    title: '🏆 Reto #3 en Go: Juego de adivinar el número 🕹️',
+    youtubeId: 'GoWZ0-ndJ7c',
+    repoPath: 'tree/master/exercises/challenge03.go',
+    description: 'En este reto pondrás en práctica lo aprendido sobre bucles, condicionales y números aleatorios en Go creando un divertido juego de adivinanzas. El usuario deberá adivinar un número entre 1 y 100 con un número limitado de intentos. ¿Serás capaz de lograrlo?'
+  },
+  
   
 ];
