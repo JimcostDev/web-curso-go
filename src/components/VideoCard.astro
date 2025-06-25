@@ -31,10 +31,10 @@ import GitHubIcon from './icons/GitHub.astro';
 
   <!-- Botones uno al lado del otro -->
   <div class="mt-auto flex flex-row gap-2">
-    <LinkButton href={`https://www.youtube.com/watch?v=${video.youtubeId}`}>
+    <LinkButton href={`https://www.youtube.com/watch?v=${video.youtubeId}`} bgColor="hover:bg-red-300/10" borderColor="border-red-300"> 
       <YouTubeIcon class="size-4 md:size-5" /> Video
     </LinkButton>
-    <LinkButton href={`https://github.com/JimcostDev/curso-go/${video.repoPath}`}>
+    <LinkButton href={`https://github.com/JimcostDev/curso-go/${video.repoPath}`} bgColor="hover:bg-gray-300/10" borderColor="border-gray-300">
       <GitHubIcon class="size-4 md:size-5" /> Código
     </LinkButton>
   </div>

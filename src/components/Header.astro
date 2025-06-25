@@ -1,0 +1,29 @@
+---
+import HomeIcon from '@components/icons/Home.astro';
+import BookIcon from '@components/icons/BookOpen.astro'; 
+import AboutIcon from '@components/icons/Mail.astro';
+import ButtonNav from './ButtonNav.astro';
+---
+
+<header class="w-full relative pb-2">
+  <nav id="navegacion" class="fixed bottom-0 left-0 w-full shadow-sm bg-sky-50 text-sky-950 py-3 z-50 md:top-0 md:bottom-auto">
+    <div class="container mx-auto max-w-4xl md:w-3/4 flex justify-between items-center px-8 md:px-0 md:space-x-4">
+      
+      <ButtonNav href="/">
+        <HomeIcon class="size-6 md:size-5" />
+        <span class="hidden md:inline">Inicio</span>
+      </ButtonNav>
+
+      <ButtonNav href="https://go.dev/doc/" target="_blank">
+        <BookIcon class="size-6 md:size-5" />
+        <span class="hidden md:inline">Documentación</span>
+      </ButtonNav>
+
+      <ButtonNav href="/#contacto">
+        <AboutIcon class="size-6 md:size-5" />
+        <span class="hidden md:inline">Contacto</span>
+      </ButtonNav>
+      
+    </div>
+  </nav>
+</header>

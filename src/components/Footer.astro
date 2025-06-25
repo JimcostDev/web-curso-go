@@ -1,50 +1,35 @@
 ---
-
+import LinkButton from './LinkButton.astro';
 ---
-
-<footer
-  class="text-center mb-12 md:mb-4 bg-sky-50 text-sky-950 py-8 max-w-screen-lg mx-auto"
->
+<footer class="text-center mb-12 md:mb-4 bg-sky-50 text-sky-950 py-12 max-w-screen-lg mx-auto">
   <div class="flex flex-col items-center pb-16 md:pb-8">
     <!-- Logo con efecto de gradiente -->
     <div class="group relative">
       <div
-        class="absolute -inset-1 bg-gradient-to-r from-sky-400 to-sky-600 rounded-full blur opacity-20 group-hover:opacity-30 transition duration-500"
-      >
+        class="absolute -inset-1 bg-gradient-to-r from-sky-400 to-sky-600 rounded-full blur opacity-20 group-hover:opacity-30 transition duration-500">
       </div>
-      <img
-        src="/logo.svg"
-        width="96"
-        height="96"
-        alt="jimcostdev logo"
-        class="relative z-10 mb-2 opacity-90 transition-transform duration-300 hover:scale-105 hover:opacity-100"
-      />
+      <img src="/logo.svg" width="96" height="96" alt="jimcostdev logo"
+        class="relative z-10 mb-2 opacity-90 transition-transform duration-300 hover:scale-105 hover:opacity-100" />
     </div>
 
     <!-- Frase motivacional -->
     <blockquote class="text-base italic text-gray-700 px-4 max-w-lg my-4">
-      "Ponte un blanco alto y haz fervientes esfuerzos por alcanzarlo y no te
-      desanimes" <span class="font-semibold">EGW</span>
+      "Ponte un blanco alto y haz fervientes esfuerzos por alcanzarlo y no te desanimes"
+      <span class="font-semibold">EGW</span>
     </blockquote>
 
-    <!-- Derechos -->
-    <p class="text-sm text-gray-600">
-      Hecho con 💙 - © <span class="font-semibold"
-        >Ronaldo Jiménez <span
-          id="currentYear"
-          class="font-semibold bg-gradient-to-r from-sky-400 to-sky-600 bg-clip-text text-transparent"
-        ></span></span
-      >
-    </p>
+    <div class="w-full max-w-xl h-px bg-gradient-to-r from-transparent via-sky-300 to-transparent my-6"></div>
+
+    <!-- Contacto -->
+    <section id="contacto" class="py-2 mt-4 w-full max-w-md text-center px-4">
+      <h2 class="text-xl font-bold mb-4">¿Te gustaría aprender conmigo?</h2>
+      <p class="mb-6 text-md">Estoy disponible para dar clases particulares de Go y programación en general.</p>
+      
+      <LinkButton  href="mailto:jimcostdev@gmail.com" bgColor="hover:bg-blue-300/10" borderColor="border-blue-300">
+       <span class="font-semibold p-1">📬 Escríbeme</span>
+      </LinkButton>
+    </section>
   </div>
 </footer>
 
-<script>
-  // Obtener el elemento donde mostrar el año
-  const yearElement = document.getElementById("currentYear");
 
-  // Actualizar con el año actual del cliente
-  if (yearElement) {
-    yearElement.textContent = new Date().getFullYear().toString();
-  }
-</script>

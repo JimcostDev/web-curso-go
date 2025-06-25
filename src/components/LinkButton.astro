@@ -1,12 +1,15 @@
+---
+const { href, target = '_blank', rel = 'noopener noreferrer', bgColor, borderColor, ...rest } = Astro.props;
+---
 <a
-  {...Astro.props}
-  target="_blank"
-  rel="noopener noreferrer"
-  class="text-sm inline-flex items-center justify-center gap-1 px-2 py-1
-    text-sky-950 bg-transparent border border-sky-950/40 rounded-full 
-    shadow-sm backdrop-blur-sm transition-all duration-500 
-    hover:border-sky-400 hover:bg-sky-400/10 hover:scale-105 
-    focus:outline-none focus:ring-2 focus:ring-sky-400/50 focus:ring-offset-2"
+  href={href}
+  target={target}
+  rel={rel}
+  {...rest}
+  class={`text-xs md:text-sm inline-flex items-center justify-center gap-2 px-4 py-1 md:py-2
+    text-sky-950 bg-transparent border rounded-full shadow-md
+    hover:shadow-xl hover:scale-105 transition-transform duration-300 cursor-pointer mb-2
+    ${bgColor} ${borderColor}`}
 >
   <slot />
 </a>
