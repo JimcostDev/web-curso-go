@@ -7,49 +7,79 @@ import GoIcon from './icons/Go.astro';
 import JimcostDevIcon from './icons/Web.astro';
 ---
 
-<section class="pt-9 md:pt-18 px-4 mt-6 relative max-w-screen-lg mx-auto">
+<section class="py-3 md:py-6 px-4 relative max-w-screen-lg mx-auto">
   <div class="flex flex-col items-center">
-    <!-- Título del curso -->
-    <h1 class="text-3xl md:text-4xl font-bold text-center px-4">
-      Curso de <span
-        class="bg-gradient-to-r from-sky-400 to-sky-600 bg-clip-text text-transparent"
+    <!-- Título mejorado con gradiente más vibrante -->
+    <h1 class="text-4xl md:text-5xl font-bold text-center mb-6">
+      Curso Completo de <span
+        class="bg-gradient-to-r from-sky-500 to-sky-700 bg-clip-text text-transparent"
       >Programación en Go</span>
     </h1>
 
-    <!-- Descripción breve -->
-    <p class="mt-4 text-center text-lg text-gray-700 max-w-prose">
-      Aprende Go desde cero con ejemplos prácticos en cada clase. Sigue paso a paso y domina el lenguaje.
+    <!-- Descripción más impactante -->
+    <p class="text-xl text-center text-gray-800 max-w-2xl mb-8">
+      Domina Golang desde cero con proyectos prácticos en cada lección. 
+      <span class="font-semibold">Aprende haciendo</span> con ejemplos reales.
     </p>
 
-    <!-- Lista de beneficios -->
-    <ul class="mt-4 text-left text-gray-700 space-y-2 max-w-prose">
-      <li>✔️ Fundamentos de Golang</li>
-      <li>✔️ Algoritmos y lógica de programación</li>
-      <li>✔️ Proyectos prácticos y ejercicios</li>
-    </ul>
+    <!-- Lista de beneficios reorganizada -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl w-full mb-10">
+      <div class="bg-sky-50/50 p-4 rounded-xl border border-sky-100">
+        <h3 class="font-bold text-sky-700 flex items-center gap-2">
+          <span class="text-lg">●</span> Fundamentos sólidos
+        </h3>
+        <p class="mt-2 text-gray-700">Sintaxis, tipos de datos y estructuras esenciales</p>
+      </div>
+      
+      <div class="bg-sky-50/50 p-4 rounded-xl border border-sky-100">
+        <h3 class="font-bold text-sky-700 flex items-center gap-2">
+          <span class="text-lg">●</span> Lógica y algoritmos
+        </h3>
+        <p class="mt-2 text-gray-700">Desarrolla habilidades para resolver problemas reales</p>
+      </div>
+      
+      <div class="bg-sky-50/50 p-4 rounded-xl border border-sky-100">
+        <h3 class="font-bold text-sky-700 flex items-center gap-2">
+          <span class="text-lg">●</span> Proyectos prácticos
+        </h3>
+        <p class="mt-2 text-gray-700">Aplica lo aprendido creando aplicaciones completas</p>
+      </div>
+    </div>
 
-    <!-- Frase de cierre -->
-    <p class="mt-4 text-center text-lg italic text-gray-600 max-w-prose">
-      Sumérgete en el mundo de Go y domina uno de los lenguajes más potentes y eficientes de la actualidad.
+    <!-- Frase de cierre más motivadora -->
+    <p class="text-center text-lg text-sky-700 italic max-w-2xl mb-10">
+      "Domina un lenguaje diseñado para la eficiencia y el alto rendimiento"
     </p>
 
-    <!-- Botones de acción -->
-    <div class="flex flex-wrap gap-4 mt-6">
-      <LinkButton href="https://www.youtube.com/playlist?list=PLlWTGK7QJnmDtruzihqTgdi4FcM2enA1X" bgColor="hover:bg-red-300/10" borderColor="border-red-300">
-        <YouTubeIcon class="size-4 md:size-5"  /> Curso Completo
+    <!-- Botones con mejor jerarquía visual -->
+    <div class="flex flex-wrap justify-center gap-3 w-full max-w-2xl">
+      <LinkButton href="https://www.youtube.com/playlist?list=PLlWTGK7QJnmDtruzihqTgdi4FcM2enA1X" 
+                 bgColor="hover:bg-red-300/10" 
+                 borderColor="border-red-300"
+                 >
+        <YouTubeIcon class="size-5" /> Ver Curso
       </LinkButton>
-      <LinkButton href="https://github.com/JimcostDev/curso-go" bgColor="hover:bg-gray-300/10" borderColor="border-gray-300">
-        <GitHubIcon class="size-4 md:size-5"  /> Repositorio
+      
+      <LinkButton href="https://github.com/JimcostDev/curso-go" 
+                 bgColor="hover:bg-gray-300/10" 
+                 borderColor="border-gray-300"
+                 >
+        <GitHubIcon class="size-5" /> Código Fuente
       </LinkButton>
-      <LinkButton href="https://go.dev/play/" bgColor="hover:bg-sky-300/10" borderColor="border-sky-300">
-        <GoIcon class="size-6 md:size-7"  /> Playground
+      
+      <LinkButton href="https://go.dev/play/" 
+                 bgColor="hover:bg-sky-300/10" 
+                 borderColor="border-sky-300"
+                 >
+        <GoIcon class="size-6" /> Go Playground
       </LinkButton>
-      <LinkButton href="https://www.jimcostdev.com/" bgColor="hover:bg-green-300/10" borderColor="border-green-300">
-        <JimcostDevIcon class="size-4 md:size-5"  /> JimcostDev
+      
+      <LinkButton href="https://www.jimcostdev.com/" 
+                 bgColor="hover:bg-green-300/10" 
+                 borderColor="border-green-300"
+                 >
+        <JimcostDevIcon class="size-5" /> JimcostDev
       </LinkButton>
     </div>
   </div>
 </section>
-
-
-
