@@ -139,5 +139,11 @@ export const videos: Video[] = [
     repoPath: 'tree/master/types/structs.go',
     description: 'En este video exploramos los structs en Go, una poderosa forma de agrupar datos bajo un mismo tipo. Aprenderás cómo crear tus propios tipos personalizados, cómo declarar métodos que operan sobre ellos y por qué es importante el uso de punteros (*) cuando quieres modificar el estado interno del struct.'
   },
+  {
+    title: '🧩 Interfaces en Go: Polimorfismo y desacoplamiento',
+    youtubeId: 'RFCCPJATUnU',
+    repoPath: 'tree/master/types/interfaces.go',
+    description: 'En este video exploramos el poder de las interfaces en Go. Aprenderás cómo permiten crear código flexible, reutilizable y desacoplado. Verás ejemplos prácticos con luchadores especializados (striker, grappler y all-rounder), demostrando cómo distintos tipos pueden cumplir la misma interfaz sin necesidad de herencia explícita.'
+  },
   
 ];
