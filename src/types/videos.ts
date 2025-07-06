@@ -145,5 +145,11 @@ export const videos: Video[] = [
     repoPath: 'tree/master/types/interfaces.go',
     description: 'En este video exploramos el poder de las interfaces en Go. Aprenderás cómo permiten crear código flexible, reutilizable y desacoplado. Verás ejemplos prácticos con luchadores especializados (striker, grappler y all-rounder), demostrando cómo distintos tipos pueden cumplir la misma interfaz sin necesidad de herencia explícita.'
   },
+  {
+    title: '🏆 Reto #5 en Go: La Conjetura de Goldbach',
+    youtubeId: '6Q493vdomjc',
+    repoPath: 'tree/master/exercises/challenge05.go',
+    description: ' ¿Sabías que todo número par mayor que 2 puede escribirse como la suma de dos números primos? ¡Eso dice la conjetura de Goldbach! En este reto, la implementamos en Go para descubrir todas las combinaciones posibles.'
+  },
   
 ];
