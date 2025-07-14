@@ -149,7 +149,13 @@ export const videos: Video[] = [
     title: '🏆 Reto #5 en Go: La Conjetura de Goldbach',
     youtubeId: '6Q493vdomjc',
     repoPath: 'tree/master/exercises/challenge05.go',
-    description: ' ¿Sabías que todo número par mayor que 2 puede escribirse como la suma de dos números primos? ¡Eso dice la conjetura de Goldbach! En este reto, la implementamos en Go para descubrir todas las combinaciones posibles.'
+    description: '¿Sabías que todo número par mayor que 2 puede escribirse como la suma de dos números primos? ¡Eso dice la conjetura de Goldbach! En este reto, la implementamos en Go para descubrir todas las combinaciones posibles.'
+  },
+  {
+    title: '🧯 Manejo de Errores en Go: De err != nil a panic/recover',
+    youtubeId: 'a5ShJfMcNAA',
+    repoPath: 'tree/master/error_handling',
+    description: 'En Go, los errores no se lanzan... ¡se retornan! Este enfoque explícito y minimalista hace que el manejo de errores sea uno de los pilares del lenguaje. En este video abordamos las herramientas clave que Go proporciona para controlar errores.'
   },
   
 ];
