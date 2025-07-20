@@ -157,5 +157,29 @@ export const videos: Video[] = [
     repoPath: 'tree/master/error_handling',
     description: 'En Go, los errores no se lanzan... ¡se retornan! Este enfoque explícito y minimalista hace que el manejo de errores sea uno de los pilares del lenguaje. En este video abordamos las herramientas clave que Go proporciona para controlar errores.'
   },
+  {
+    title: '🧵 Concurrencia en Go: Introducción',
+    youtubeId: 't14QKe354PA',
+    repoPath: 'tree/master/concurrency',
+    description: '¿Te suena confuso el concepto de concurrencia? No te preocupes, en este video te lo explico paso a paso para que entiendas qué es, cómo se diferencia del paralelismo y cómo lo implementamos en Go. ¡Todo de forma clara y visual!'
+  },
+  {
+    title: '⚙️ Concurrencia en Go: Goroutines, Canales, Mutex y WaitGroups en Acción',
+    youtubeId: 'TjWuo5p3Oxw',
+    repoPath: 'tree/master/concurrency',
+    description: '¿Ya entiendes la teoría? ¡Ahora vamos a ponerla en práctica con código real en Go! En este video exploramos 4 pilares fundamentales para manejar tareas concurrentes de forma segura y eficiente.'
+  },
+  {
+    title: '🌐 Servicios Web en Go: Introducción al Desarrollo Web',
+    youtubeId: 'IV-Z4l1zU4o',
+    repoPath: 'tree/master/webserver',
+    description: '¿Sabías que cada vez que abres una app o visitas una web, estás interactuando con servicios y APIs que hablan a través de internet? En esta intro al desarrollo web con Go, te explico de forma clara cómo funciona todo ese ecosistema.'
+  },
+  {
+    title: '🕸️ Tu Primer Servidor Web en Go: Rutas, Parámetros y HTML',
+    youtubeId: 'Ibl44mwn2vI',
+    repoPath: 'tree/master/webserver',
+    description: '¿Listo para lanzar tu primer servidor web en Go? En este video construimos un servicio simple con rutas dinámicas, respuestas personalizadas y hasta archivos HTML. ¡Tu backend empieza aquí!'
+  },
   
 ];
