@@ -181,5 +181,17 @@ export const videos: Video[] = [
     repoPath: 'tree/master/webserver',
     description: '¿Listo para lanzar tu primer servidor web en Go? En este video construimos un servicio simple con rutas dinámicas, respuestas personalizadas y hasta archivos HTML. ¡Tu backend empieza aquí!'
   },
+  {
+    title: '📦 Gestión de Módulos en Go: Paquetes, go.mod y go.sum',
+    youtubeId: 'AibVxJxm1ck',
+    repoPath: 'tree/master/utils',
+    description: 'Go utiliza módulos para mantener tus dependencias bajo control y garantizar que todos en tu equipo usen las mismas versiones de librerías. En este video te explico cómo funcionan los paquetes y módulos, y las herramientas clave (go.mod, go.sum, go mod tidy) para gestionar dependencias de forma segura y reproducible.'
+  },
+  {
+    title: '🧪 Testing en Go: Unit Tests y Table-Driven Tests',
+    youtubeId: 'NQGJGypYlEo',
+    repoPath: 'tree/master/unittests',
+    description: 'En este video aprenderás a escribir pruebas unitarias en Go de forma profesional, usando tanto table-driven tests como pruebas simples, y a ejecutar tus tests con los comandos de go test más útiles.'
+  },
   
 ];
